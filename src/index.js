@@ -1,9 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./app.scss";
+import Navbar from './components/features/Navbar';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 class App extends React.Component{
   render(){
       return(
-          <div>asdasdasdas</div>
+        <BrowserRouter>
+          <div> 
+            <Navbar/>
+            <Switch>
+              
+            </Switch>
+          </div>
+        </BrowserRouter>
+         
       )
   }
 }
